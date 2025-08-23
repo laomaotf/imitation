@@ -109,7 +109,7 @@ def half_cheetah():
     total_timesteps = int(5e6)  # does OK after 1e6, but continues improving
 
 
-@train_rl_ex.named_config
+#@train_rl_ex.named_config
 def seals_half_cheetah():
     environment = dict(
         gym_id="seals/HalfCheetah-v0",
@@ -143,7 +143,7 @@ def seals_half_cheetah():
     )
 
 
-@train_rl_ex.named_config
+#@train_rl_ex.named_config
 def seals_hopper():
     environment = dict(gym_id="seals/Hopper-v0", num_vec=1)
     policy = dict(
@@ -174,7 +174,7 @@ def seals_hopper():
     )
 
 
-@train_rl_ex.named_config
+#@train_rl_ex.named_config
 def seals_humanoid():
     environment = dict(gym_id="seals/Humanoid-v0")
     rl = dict(batch_size=16384)
@@ -209,7 +209,7 @@ def reacher():
     environment = dict(gym_id="Reacher-v2")
 
 
-@train_rl_ex.named_config
+#@train_rl_ex.named_config
 def seals_ant():
     environment = dict(
         gym_id="seals/Ant-v0",
@@ -244,7 +244,7 @@ def seals_ant():
     )
 
 
-@train_rl_ex.named_config
+#@train_rl_ex.named_config
 def seals_swimmer():
     environment = dict(gym_id="seals/Swimmer-v0", num_vec=1)
     policy = dict(
@@ -275,7 +275,7 @@ def seals_swimmer():
     )
 
 
-@train_rl_ex.named_config
+#@train_rl_ex.named_config
 def seals_walker():
     environment = dict(gym_id="seals/Walker2d-v0", num_vec=1)
     policy = dict(

@@ -75,7 +75,7 @@ def cartpole():
     allow_variable_horizon = True
 
 
-@train_preference_comparisons_ex.named_config
+#@train_preference_comparisons_ex.named_config
 def seals_ant():
     environment = dict(gym_id="seals/Ant-v0")
     rl = dict(
@@ -102,7 +102,7 @@ def half_cheetah():
     rl = dict(batch_size=16384, rl_kwargs=dict(batch_size=1024))
 
 
-@train_preference_comparisons_ex.named_config
+#@train_preference_comparisons_ex.named_config
 def seals_half_cheetah():
     environment = dict(gym_id="seals/HalfCheetah-v0")
     rl = dict(
@@ -123,7 +123,7 @@ def seals_half_cheetah():
     total_timesteps = 20000000
 
 
-@train_preference_comparisons_ex.named_config
+#@train_preference_comparisons_ex.named_config
 def seals_hopper():
     environment = dict(gym_id="seals/Hopper-v0")
     policy = dict(
@@ -149,7 +149,7 @@ def seals_hopper():
     )
 
 
-@train_preference_comparisons_ex.named_config
+#@train_preference_comparisons_ex.named_config
 def seals_swimmer():
     environment = dict(gym_id="seals/Swimmer-v0")
     policy = dict(
@@ -176,7 +176,7 @@ def seals_swimmer():
     )
 
 
-@train_preference_comparisons_ex.named_config
+#@train_preference_comparisons_ex.named_config
 def seals_walker():
     environment = dict(gym_id="seals/Walker2d-v0")
     policy = dict(
@@ -203,7 +203,7 @@ def seals_walker():
     )
 
 
-@train_preference_comparisons_ex.named_config
+#@train_preference_comparisons_ex.named_config
 def seals_humanoid():
     locals().update(**MUJOCO_SHARED_LOCALS)
     environment = dict(gym_id="seals/Humanoid-v0")

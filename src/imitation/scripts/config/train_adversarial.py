@@ -136,7 +136,7 @@ def half_cheetah():
     environment = dict(gym_id="HalfCheetah-v2")
 
 
-@train_adversarial_ex.named_config
+#@train_adversarial_ex.named_config
 def seals_humanoid():
     locals().update(**MUJOCO_SHARED_LOCALS)
     environment = dict(gym_id="seals/Humanoid-v0")

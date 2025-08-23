@@ -71,19 +71,19 @@ def half_cheetah():
     environment = dict(gym_id="HalfCheetah-v2")
 
 
-@eval_policy_ex.named_config
-def seals_half_cheetah():
-    environment = dict(gym_id="seals/HalfCheetah-v0")
+#@eval_policy_ex.named_config
+#def seals_half_cheetah():
+#    environment = dict(gym_id="seals/HalfCheetah-v0")
 
 
-@eval_policy_ex.named_config
-def seals_hopper():
-    environment = dict(gym_id="seals/Hopper-v0")
+#@eval_policy_ex.named_config
+#def seals_hopper():
+#    environment = dict(gym_id="seals/Hopper-v0")
 
 
-@eval_policy_ex.named_config
-def seals_humanoid():
-    environment = dict(gym_id="seals/Humanoid-v0")
+#@eval_policy_ex.named_config
+#def seals_humanoid():
+#    environment = dict(gym_id="seals/Humanoid-v0")
 
 
 @eval_policy_ex.named_config
@@ -106,19 +106,19 @@ def reacher():
     environment = dict(gym_id="Reacher-v2")
 
 
-@eval_policy_ex.named_config
-def seals_ant():
-    environment = dict(gym_id="seals/Ant-v0")
+#@eval_policy_ex.named_config
+#def seals_ant():
+#    environment = dict(gym_id="seals/Ant-v0")
 
 
-@eval_policy_ex.named_config
-def seals_swimmer():
-    environment = dict(gym_id="seals/Swimmer-v0")
+#@eval_policy_ex.named_config
+#def seals_swimmer():
+#    environment = dict(gym_id="seals/Swimmer-v0")
 
 
-@eval_policy_ex.named_config
-def seals_walker():
-    environment = dict(gym_id="seals/Walker2d-v0")
+#@eval_policy_ex.named_config
+#def seals_walker():
+#    environment = dict(gym_id="seals/Walker2d-v0")
 
 
 @eval_policy_ex.named_config
