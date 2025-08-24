@@ -53,7 +53,7 @@ def acrobot():
 
 @eval_policy_ex.named_config
 def ant():
-    environment = dict(gym_id="Ant-v2")
+    environment = dict(gym_id="Ant-v1")
 
 
 @eval_policy_ex.named_config
@@ -116,9 +116,9 @@ def reacher():
 #    environment = dict(gym_id="seals/Swimmer-v0")
 
 
-#@eval_policy_ex.named_config
-#def seals_walker():
-#    environment = dict(gym_id="seals/Walker2d-v0")
+@eval_policy_ex.named_config
+def seals_walker():
+    environment = dict(gym_id="seals/Walker2d-v1")
 
 
 @eval_policy_ex.named_config
